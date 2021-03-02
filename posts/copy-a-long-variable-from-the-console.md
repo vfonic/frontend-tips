@@ -20,9 +20,15 @@ It's not easy to see the full value or copy the content to clipboard. Here is th
 
 _Console_ will try to convert the result to `String`. As a result, you get the full content of original variable.
 
-Here is the output which was omitted to fit in the screen:
+Here is the output which was truncated to fit in the screen:
 
 ```js
 "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,...,
 490,491,492,493,494,495,496,497,498,499"
+```
+
+There's an even simpler way to do this. You can pass the variable to the `copy()` function and Chrome will place the variable contents in the clipboard for you:
+
+```js
+copy(range)
 ```
